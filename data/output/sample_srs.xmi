@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:version="2.5">
+  <uml:Model name="Automated_SRS_Model" xmi:id="model_1">
+    <packagedElement xmi:type="uml:Class" xmi:id="class_0" name="Books"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="class_1" name="Librarian">
+      <generalization xmi:id="rel_0" general="class_4"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="class_2" name="Library">
+      <ownedAttribute xmi:id="class_2_attr_0" name="Books" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="class_3" name="LibraryManagementSystem">
+      <ownedOperation xmi:id="class_3_op_0" name="allow" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="class_4" name="User">
+      <ownedOperation xmi:id="class_4_op_0" name="borrow" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="rel_1" name="Library_Aggregation_Books" aggregation="shared">
+      <ownedEnd type="class_2"/>
+      <ownedEnd type="class_0"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="rel_2" name="Library_Association_LibraryManagementSystem">
+      <ownedEnd type="class_2"/>
+      <ownedEnd type="class_3"/>
+    </packagedElement>
+  </uml:Model>
+</xmi:XMI>

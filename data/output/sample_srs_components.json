@@ -1,0 +1,44 @@
+{
+    "components": {
+        "classes": [
+            "Books",
+            "Librarian",
+            "Library",
+            "LibraryManagementSystem",
+            "User"
+        ],
+        "attributes": [
+            [
+                "Library",
+                "Books"
+            ]
+        ],
+        "methods": [
+            [
+                "LibraryManagementSystem",
+                "allow"
+            ],
+            [
+                "User",
+                "borrow"
+            ]
+        ]
+    },
+    "relationships": [
+        [
+            "Librarian",
+            "Inheritance",
+            "User"
+        ],
+        [
+            "Library",
+            "Aggregation",
+            "Books"
+        ],
+        [
+            "Library",
+            "Association",
+            "LibraryManagementSystem"
+        ]
+    ]
+}

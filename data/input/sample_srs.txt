@@ -1,0 +1,3 @@
+The Library Management System shall allow a User to borrow books.
+        A Librarian is a User.
+        The Library contains Books.

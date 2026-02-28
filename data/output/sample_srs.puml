@@ -1,0 +1,26 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Books {
+}
+
+class Librarian {
+}
+
+class Library {
+  +Books
+}
+
+class LibraryManagementSystem {
+  +allow()
+}
+
+class User {
+  +borrow()
+}
+
+Librarian --|> User
+Library o-- Books
+Library --> LibraryManagementSystem : Association
+
+@enduml

@@ -1,0 +1,50 @@
+{
+    "classes": [
+        "Books",
+        "Librarian",
+        "Library",
+        "LibraryManagementSystem",
+        "User"
+    ],
+    "attributes": [
+        [
+            "User",
+            "name"
+        ],
+        [
+            "User",
+            "email_address"
+        ],
+        [
+            "User",
+            "user_id"
+        ]
+    ],
+    "methods": [
+        [
+            "LibraryManagementSystem",
+            "allow"
+        ],
+        [
+            "User",
+            "borrow"
+        ]
+    ],
+    "relationships": [
+        [
+            "Librarian",
+            "Inheritance",
+            "User"
+        ],
+        [
+            "Library",
+            "Aggregation",
+            "Books"
+        ],
+        [
+            "LibraryManagementSystem",
+            "Association",
+            "Library"
+        ]
+    ]
+}
